@@ -1,0 +1,48 @@
+.Container {
+    height: 100vh;
+    max-width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (max-width: 768px) {
+        max-width: 90vw;
+        /* Reduz a largura do container para telas menores */
+    }
+}
+
+.Box {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+        font-size: 30px;
+        margin: 2rem;
+
+    }
+
+    @media (max-width: 768px) {
+        h1 {
+            font-size: 24px;
+            /* Reduz o tamanho da fonte do título em telas menores */
+            margin-top: 0;
+            margin-bottom: 3rem;
+
+            white-space: nowrap;
+
+        }
+    }
+}
+
+.Cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1em;
+
+    @media (max-width: 768px) {
+        justify-content: center;
+        gap: 1em;
+    }
+}

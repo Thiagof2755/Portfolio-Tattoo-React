@@ -1,0 +1,29 @@
+.Container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 80%;
+}
+
+.Card img {
+    max-width: 300px;
+    max-height: 300px;
+    object-fit: cover;
+    margin: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 30px rgba(194, 194, 194, 0.5);
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: 0 0 30px rgba(194, 194, 194, 0.8);
+        transition: 0.5s;
+        scale: 1.1;
+    }
+
+    @media screen and (max-width: 768px) {
+        max-width: 200px;
+        max-height: 200px;
+        margin: 0;
+        box-shadow: 0 0 15px rgba(194, 194, 194, 0.5);
+    }
+}

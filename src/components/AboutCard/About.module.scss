@@ -16,8 +16,10 @@
 
     @media screen and (max-width: 768px) {
         width: 100%;
+        height: auto;
         padding-top: 0;
         flex-direction: column;
+        margin-bottom: 5rem;
     }
 }
 
@@ -53,12 +55,13 @@
 }
 
 .Title p {
-    font-size: 1rem;
+    font-size: 0.8rem;
     color: #fff;
     margin-bottom: 1rem;
 
     @media screen and (max-width: 768px) {
         font-size: 0.8rem;
+       
     }
 }
 
@@ -77,6 +80,12 @@
         font-size: 16px;
         line-height: 1.5;
         margin-bottom: 0px;
+
+
+        @media screen and (max-width: 768px) {
+            margin-bottom: 0;
+            font-size: 14px;
+        }
     }
 }
 
