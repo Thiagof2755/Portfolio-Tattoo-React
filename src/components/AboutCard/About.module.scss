@@ -12,6 +12,7 @@
     display: flex;
     align-items: center ;
     text-align: center;
+    margin-top: 5rem;
 
     @media screen and (max-width: 768px) {
         width: 100%;
@@ -49,7 +50,7 @@
 
 
     @media screen and (max-width: 768px) {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 }
 

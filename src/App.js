@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import './index.css';
 import Navbar from './components/Navbar';
-import ProfileCard from './components/ProfileCard';
+import ProfileCard from './components/ProfileCard'; // Importe o componente ProfileCard
 import AboutCard from './components/AboutCard';
 import Gallery from './components/Gallery';
 import Style from './App.module.css';
@@ -35,20 +35,21 @@ function App() {
         });
     }, []);
 
+
     return (
         <div className={Style.App}>
             <Navbar />
             <div>
-                <div className={`SessionOne ${Style.SessionOne}`}>
-                    <ProfileCard />
+                <div id ="profile" className={`SessionOne ${Style.SessionOne}`}>
+                    <ProfileCard /> {/* Adicione o componente ProfileCard aqui */}
                 </div>
-                <div className={`SessionTwo ${Style.SessionTwo}`}>
+                <div id="about" className={`SessionTwo ${Style.SessionTwo}`}>
                     <AboutCard />
                 </div>
-                <div className={`SessionThree ${Style.SessionThree}`}>
+                <div id="gallery" className={`SessionThree ${Style.SessionThree}`}>
                     <Gallery />
                 </div>
-                <div className={`SessionFour ${Style.SessionFour}`}>
+                <div id="contact" className={`SessionFour ${Style.SessionFour}`}>
                     <Contact />
                 </div>
             </div>
