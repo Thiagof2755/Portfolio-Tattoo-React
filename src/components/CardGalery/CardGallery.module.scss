@@ -21,9 +21,18 @@
     }
 
     @media screen and (max-width: 768px) {
-        max-width: 200px;
-        max-height: 200px;
+        max-width: 130px;
+        max-height: 130px;
         margin: 0;
         box-shadow: 0 0 15px rgba(194, 194, 194, 0.5);
     }
+
+    // para telas de pc menores  1336x768
+
+    @media screen and (max-width: 1366px) {
+        max-width: 200px;
+        max-height: 200px;
+        box-shadow: 0 0 30px rgba(194, 194, 194, 0.5);
+    }
+
 }
