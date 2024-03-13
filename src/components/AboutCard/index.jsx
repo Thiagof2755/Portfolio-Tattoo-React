@@ -20,7 +20,7 @@ const AboutCard = () => {
             <div className={Style.Movie}>
                 <div className={Style.Right}>
                     <div className={Style.button}>
-                    <video autoPlay muted loop>
+                    <video autoPlay muted loop> 
                         <source src={Video} type="video/mp4" />
                     </video>
                 </div>
