@@ -14,7 +14,7 @@ function App() {
         const sr = ScrollReveal({ 
             reset: true,
             duration: 1000, // Defina a duração padrão para 1000ms
-            distance: '20px', // Define a distância padrão para 20px
+            distance: '1px', // Define a distância padrão para 20px
             delay: 0, // Sem atraso padrão
             opacity: 0, // Opacidade inicial padrão de 0
             scale: 1, // Escala inicial padrão de 1

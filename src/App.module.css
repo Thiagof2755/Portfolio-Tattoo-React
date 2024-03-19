@@ -3,4 +3,9 @@
 .Sessionthree,
 .SessionFour {
     visibility: hidden;
+
+
+    @media (min-width: 1200px) {
+        visibility: visible;
+    }
 }
