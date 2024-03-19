@@ -12,7 +12,7 @@ import ScrollReveal from 'scrollreveal';
 function App() {
     useEffect(() => {
         const sr = ScrollReveal({ 
-            reset: true,
+            reset: false,// Não redefinir após revelar
             duration: 1000, // Defina a duração padrão para 1000ms
             distance: '1px', // Define a distância padrão para 20px
             delay: 0, // Sem atraso padrão
