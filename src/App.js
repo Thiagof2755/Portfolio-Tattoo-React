@@ -6,35 +6,42 @@ import AboutCard from './components/AboutCard';
 import Gallery from './components/Gallery';
 import Style from './App.module.css';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 import ScrollReveal from 'scrollreveal';
 
 function App() {
     useEffect(() => {
-        const sr = ScrollReveal({ reset: true });
-
+        const sr = ScrollReveal({ 
+            reset: true,
+            duration: 1000, // Defina a duração padrão para 1000ms
+            distance: '20px', // Define a distância padrão para 20px
+            delay: 0, // Sem atraso padrão
+            opacity: 0, // Opacidade inicial padrão de 0
+            scale: 1, // Escala inicial padrão de 1
+            easing: 'ease', // Tipo de easing padrão
+        });
+    
         sr.reveal('.SessionOne', {
-            duration: 1000,
-            distance: '100px',
             origin: 'bottom',
         });
-        sr.reveal('.SessionTwo', { duration: 1500 });
-        sr.reveal('.SessionThree', { duration: 2000, rotate: { x: 0, y: 80, z: 0 } });
-        sr.reveal('.SessionFour', {
-            duration: 2000,
-            distance: '100px',
+        sr.reveal('.SessionTwo', {
             origin: 'bottom',
+            delay: 200, // Adiciona um pequeno atraso para dar uma sensação de continuidade
+        });
+        sr.reveal('.SessionThree', {
+            origin: 'bottom',
+            delay: 400, // Aumenta o atraso para uma sensação mais progressiva
+        });
+        sr.reveal('.SessionFour', {
+            origin: 'bottom',
+            delay: 600, // Aumenta o atraso novamente
         });
         sr.reveal('.SessionFive', {
             origin: 'bottom',
-            distance: '20px',
-            duration: 1000,
-            delay: 0,
-            opacity: 0,
-            scale: 0.8,
-            easing: 'ease',
+            delay: 100, // Aumenta o atraso novamente
         });
     }, []);
-
+    
 
     return (
         <div className={Style.App}>
@@ -52,6 +59,10 @@ function App() {
                 <div id="contact" className={`SessionFour ${Style.SessionFour}`}>
                     <Contact />
                 </div>
+                <div id="footer" className={`SessionFive ${Style.SessionFive}`}>
+                    <Footer />
+                </div>
+
             </div>
         </div>
     );
