@@ -17,7 +17,7 @@ function App() {
             distance: '20px', // Define a distância padrão para 20px
             delay: 0, // Sem atraso padrão
             opacity: 0, // Opacidade inicial padrão de 0
-            scale: 1, // Escala inicial padrão de 1
+            scale: 0.7, // Escala inicial padrão de 1
             easing: 'ease', // Tipo de easing padrão
         });
     
