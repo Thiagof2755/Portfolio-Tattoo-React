@@ -12,7 +12,6 @@ const AboutCard = () => {
         <p>Seja bem-vindo ao mundo da arte na pele! Conheça Victor Alerrandro.</p>
     </div>
     <div className={Style.Content}>
-        <h2>Paixão pela Arte</h2>
         <p>Victor Alerrandro é um tatuador excepcional de Uberlândia, cuja jornada artística começou na infância e o levou a explorar uma variedade de formas de expressão. Desde cedo, encontrou sua paixão na tatuagem, uma forma de arte que combina sua habilidade técnica com suas inspirações nas suas obras preferidas da cultura geek, como filmes, séries e animes. Além de seu talento como tatuador, Victor é um membro ativo de sua comunidade, contribuindo para projetos de arte e demonstrando seu compromisso tanto com a arte autoral quanto com outras formas de expressão artística.</p>
     </div>
 </div>
